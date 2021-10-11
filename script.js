@@ -60,7 +60,7 @@ function ståOverRunde (){
     TotalSkår[aktivSpiller] += Poengsumm;
     document.getElementById(`score--${aktivSpiller}`).textContent =  TotalSkår[aktivSpiller];
 
-    if(TotalSkår[aktivSpiller] >=20) {
+    if(TotalSkår[aktivSpiller] >=50) {
         document.querySelector(`.player--${aktivSpiller}`).classList.add('player--winner');
         document.querySelector(`.player--${aktivSpiller}`).classList.remove('player--active');
         document.getElementById("kast").setAttribute('disabled','disabled');
